@@ -1,6 +1,6 @@
 # SOURCES
 
-Register of every source considered. **Rule: only public-domain or permissively licensed material may be ingested.** Update the status column as you go. "Fetched" means stored in the repo or knowledge base with header metadata (URL, retrieval date, licence).
+Register of every source considered. **Rule: only public-domain or permissively licensed material may be ingested into the notebooks or the repo.** Update the status as you go. "Fetched" means stored with header metadata (URL, retrieval date, licence).
 
 Status key: `IN` = approved for ingest, `VERIFY` = believed usable, licence must be confirmed on the source page first, `OUT` = do not ingest.
 
@@ -12,9 +12,15 @@ Status key: `IN` = approved for ingest, `VERIFY` = believed usable, licence must
 | S-02 | Wigan & Leigh College, T Levels page | https://www.wigan-leigh.ac.uk/subject/t-level/ | Confirming course, campus, level, UCAS points | Facts only, no text stored | Read 2026-10-01 |
 | S-03 | Pearson, T Level in Legal Services page | https://qualifications.pearson.com/en/qualifications/t-levels/legal-services.html | Confirming awarding body and structure | Facts only, no text stored | Read 2026-10-01 |
 
-Tooling (not knowledge sources): Open Notebook, https://github.com/lfnovo/open-notebook, MIT licence (verified 2026-10-01).
+## B. Tooling (not knowledge sources)
 
-## B. Explicitly out
+| Tool | URL | Licence | Status |
+|---|---|---|---|
+| notebooklm-py (unofficial NotebookLM Python API and CLI) | https://github.com/teng-lin/notebooklm-py | Check repo before use | Not yet tried |
+| notebooklm-mcp-cli (`nlm`, unofficial CLI and MCP server) | https://github.com/jacob-bd/notebooklm-mcp-cli | Check repo before use | Not yet tried |
+| Open Notebook (considered in D2, dropped in D3) | https://github.com/lfnovo/open-notebook | MIT (verified 2026-10-01) | Not used |
+
+## C. Explicitly out
 
 | ID | Source | Why |
 |---|---|---|
@@ -24,7 +30,7 @@ Tooling (not knowledge sources): Open Notebook, https://github.com/lfnovo/open-n
 | X-04 | Practitioner texts named in the outline (Archbold, Blackstone's Criminal Practice, Stone's Justices' Manual, Banks on Sentence and so on) | Commercial publications |
 | X-05 | Paid databases (Westlaw, LexisNexis, CrimeLine) | Licensed content |
 
-## C. Planned, not yet fetched
+## D. Planned, not yet fetched
 
 Primary law from legislation.gov.uk (licence: VERIFY, believed Open Government Licence), and case law from the National Archives Find Case Law service (licence: VERIFY).
 
@@ -58,7 +64,7 @@ Core, third priority:
 | Companies Act 2006 (relevant parts) | C02 |
 | Data protection legislation (UK GDPR, Data Protection Act 2018) | C05, C07 |
 
-## D. Ingest header (put this on every stored source file)
+## E. Ingest header (put this on every stored source file, and in the notebook source title or notes)
 
 ```
 source_id:      e.g. L-PACE-1984

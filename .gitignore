@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Secrets and auth artifacts (NotebookLM tooling stores Google session data locally; never commit it)
+.env
+.env.*
+*.pem
+*.key
+*cookies*
+storage_state.json
+.notebooklm/
+.nlm/
+.config/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Local scratch and exports not meant for the repo
+scratch/
+exports/raw/
